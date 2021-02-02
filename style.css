@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #000000ce;
+    display: flex;
+}
+.container{
+    margin: auto;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.timer{
+    font-size: 76px;
+    font-weight: lighter;
+    color: #fff;
+    width:233px;
+}
+.bottomPart{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btns{
+   width: 220px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5) ;
+
+}
+.btns .toggle{
+    transition: all 0.3s ease;
+    background-color: green;
+    z-index: 1;
+}
+.btns .toggle:active
+{
+    transform: scale(0.9);
+}
+.btns .toggle.on{
+    background-color: #d92027;
+}
+
+.lap_box{
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    padding-left: 30px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lapitem{
+    width: 120px;
+    height: 30px;
+}
